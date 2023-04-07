@@ -1,0 +1,16 @@
+body{
+  background: rgb(160,207,233);
+  background: linear-gradient(90deg, rgba(160,207,233,1) 0%, rgba(37,37,198,1) 37%, rgba(77,28,150,1) 100%);
+}
+
+  .app-content {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  
+
+  }
+  .app-content.entered {
+    opacity: 1;
+    transform: translateY(0);
+  }
