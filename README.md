@@ -19,7 +19,6 @@ Shopping Cart Functionality: The application enables users to add products to th
 
 User Authentication and Login: To enhance security and personalize the experience, I implemented a user authentication system. This feature enables users to create accounts, log in securely, and access personalized features such as order history and saved payment methods.
 
-Through the development o
 
 
 
