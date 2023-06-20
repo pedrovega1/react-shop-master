@@ -1,3 +1,14 @@
+Book Catalog: Users can browse through a catalog of books available in the application. The catalog includes various genres and categories, allowing users to discover books of interest.
+
+Advanced Search: Booklib offers an advanced search functionality, enabling users to search for books by specific criteria such as author, title, or genre. This feature enhances the user experience by providing accurate search results tailored to their preferences.
+
+Filtering and Sorting: Users have the ability to filter books by specific categories or genres. This functionality allows users to narrow down their search and find books that align with their preferences. Additionally, the application provides sorting options to organize search results based on relevance, popularity, or other criteria.
+
+Book Details: Booklib provides detailed information about each book, including its title, author, description, publication date, and other relevant details. This allows users to gain a comprehensive understanding of a book before making a decision to read or purchase it.
+
+User Interactions: The application incorporates user interactions such as saving books to a personal reading list or marking books as favorites. These features enable users to personalize their book recommendations and keep track of books they are interested in.
+
+
 State Management with Hooks: I utilized React Hooks to manage the application's state effectively. This allowed for seamless updates and rendered a smooth user experience.
 
 Filtering and Searching: The React Shop provides users with the ability to filter products by category and search for specific items using keywords. This feature enhances the user's browsing experience by providing tailored product suggestions.
