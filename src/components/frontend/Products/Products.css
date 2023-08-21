@@ -1,75 +1,61 @@
-.products {
-  margin: 20px auto;
-  width: 80%;
+.products-container {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  background: rgb(86, 141, 172);
-  background: linear-gradient(
-    90deg,
-    rgba(86, 141, 172, 1) 0%,
-    rgba(37, 37, 198, 1) 47%,
-    rgba(57, 0, 142, 1) 100%
-  );
-  border-radius: 5px;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-.card {
-  width: 300px;
-  height: 400px;
+.product-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  width: calc(33.33% - 40px);
+}
 
-  border-radius: 5px;
-  overflow: hidden;
-  padding: 10px;
-  margin: 40px 20px;
-  background: rgb(57, 0, 142);
-  background: linear-gradient(
-    90deg,
-    rgba(57, 0, 142, 1) 0%,
-    rgba(37, 37, 198, 1) 47%,
-    rgba(86, 141, 172, 1) 100%
-  );
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-image-container {
+  height: 200px; /* Set a fixed height for consistent image size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .product-image {
-  width: 100%;
-  max-width: 300px;
-  min-height: 200px;
-  display: block;
-  object-fit: cover;
+  max-height: 100%; /* Ensure the image fits within the container */
+  max-width: 100%; /* Ensure the image fits within the container */
 }
 
 .product-name {
-  text-transform: uppercase;
-  margin: 10px 0px;
-}
-.product-price {
-  margin: 10px 0px;
-  padding-bottom: 20px;
   font-size: 18px;
-  line-height: 300px;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
 }
 
 .product-add-button {
-  font-weight: 700;
-  font-size: 18px;
-  border-radius: 5px;
+  background-color: #4caf50;
   border: none;
-  outline: none;
-  background: rgb(98,21,212);
-background: linear-gradient(90deg, rgba(98,21,212,1) 0%, rgba(108,108,162,1) 47%, rgba(6,83,126,1) 100%);
+  border-radius: 4px;
   color: white;
-  width: 100%;
-  display: block;
   cursor: pointer;
-  text-transform: uppercase;
-  margin: 15px auto;
+  font-size: 14px;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .product-add-button:hover {
-  background-color: rgb(27, 26, 24);
-}
-
-.product-add-button:active {
-  transform: translateY(2px);
+  background-color: #45a049;
 }

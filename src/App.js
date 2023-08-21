@@ -10,14 +10,13 @@ import { Transition } from "react-transition-group";
 
 function App() {
   const { productItems } = data;
-  const [cartItems, setcartItems] = useState([]);
+  const [cartItems, setCartItems] = useState([]);
   const [showLoginForm, setShowLoginForm] = useState(true);
-  const [isLoaded, setIsLoaded] = useState(false);
 
   const handleAddProduct = (product) => {
     const productExist = cartItems.find((item) => item.id === product.id);
     if (productExist) {
-      setcartItems(
+      setCartItems(
         cartItems.map((item) =>
           item.id === product.id
             ? { ...productExist, quantity: productExist.quantity + 1 }
@@ -25,16 +24,16 @@ function App() {
         )
       );
     } else {
-      setcartItems([...cartItems, { ...product, quantity: 1 }]);
+      setCartItems([...cartItems, { ...product, quantity: 1 }]);
     }
   };
 
   const handleRemoveProduct = (product) => {
     const productExist = cartItems.find((item) => item.id === product.id);
     if (productExist.quantity === 1) {
-      setcartItems(cartItems.filter((item) => item.id !== product.id));
+      setCartItems(cartItems.filter((item) => item.id !== product.id));
     } else {
-      setcartItems(
+      setCartItems(
         cartItems.map((item) =>
           item.id === product.id
             ? { ...productExist, quantity: productExist.quantity - 1 }
@@ -45,7 +44,7 @@ function App() {
   };
 
   const handleCartClearance = () => {
-    setcartItems([]);
+    setCartItems([]);
   };
 
   const handleLogin = (username, password) => {

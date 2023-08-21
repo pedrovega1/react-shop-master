@@ -19,7 +19,7 @@ const data = {
       id: "5",
       name: "Iphone 13",
       price: 750,
-      image: "./pics/iphone13.png",
+      image: "https://recommerce.gumlet.io/almajuice.reshop.kz/catalog/289/125697826262529ca6030b9_original.jpg?enlarge=true&mode=fill&width=488&height=488&bg=ffffffff&format=auto",
     },
     {
       id: "6",
@@ -37,7 +37,7 @@ const data = {
       id: "8",
       name: "Iphone 13",
       price: 200,
-      image: "https://e-fix.kz/uploads/products/32686/remont-iphone-13.jpg",
+      image: "https://cdn.shoplightspeed.com/shops/662820/files/47557045/800x800x3/apple-iphone-13-pro-max-128-gb.jpg",
     },
   ],
 };
